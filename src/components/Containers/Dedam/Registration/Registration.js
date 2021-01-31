@@ -19,35 +19,35 @@ const Registration = props => {
         e.preventDefault();
 
         if(!firstname) {
-            setError('Firstname cannot be empty');
+            setError('Vardo laukas negali būti tuščias');
             return;
         }
         if(!lastname) {
-            setError('Lastname cannot be empty');
+            setError('Pavardės laukas negali būti tuščias');
             return;
         }
         if(!birthday) {
-            setError('Birthday cannot be empty');
+            setError('Gimimo datos laukas negali būti tuščias');
             return;
         }
         if(!email) {
-            setError('Email cannot be empty');
+            setError('Elektroninio pašto laukas negali būti tuščias');
             return;
         }
         if(!username) {
-            setError('Username cannot be empty');
+            setError('Slapyvardžio laukas negali būti tuščias');
             return;
         }
         if(!password) {
-            setError('Password cannot be empty');
+            setError('Slaptažodžio laukas negali būti tuščias');
             return;
         }
         if(!passwordRepeat) {
-            setError('Password repeat cannot be empty');
+            setError('Slaptažodžio pakartojimo laukas negali būti tuščias');
             return;
         }
         if(password !== passwordRepeat) {
-            setError('Password and password repeat do not match');
+            setError('Slaptažodžiai nesutampa');
             return;
         }
 
@@ -71,7 +71,7 @@ const Registration = props => {
 
 
             notify({
-                text: 'Registration successful, now you can log in', 
+                text: 'Registracija sėkminga, dabar galite prisijungti', 
                 variant: 'success'
             });
         }
@@ -84,25 +84,25 @@ const Registration = props => {
                 onSubmit={handleRegistration}
             >
                 <Form.Group>
-                    <Form.Label>First name</Form.Label>
+                    <Form.Label>Vardas</Form.Label>
                     <Form.Control
                         type='text'
-                        placeholder='First name'
+                        placeholder='Vardas'
                         onChange={e => setFirstname(e.target.value)}
                     />
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Last name</Form.Label>
+                    <Form.Label>Pavardė</Form.Label>
                     <Form.Control
                         type='text'
-                        placeholder='Last name'
+                        placeholder='Pavardė'
                         onChange={e => setLastname(e.target.value)}
                     />
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Birthday</Form.Label>
+                    <Form.Label>Gimimo data</Form.Label>
                     <Form.Control
                         type='date'
                         onChange={e => setBirthday(e.target.value)}
@@ -110,7 +110,7 @@ const Registration = props => {
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Email</Form.Label>
+                    <Form.Label>Elektroninis paštas</Form.Label>
                     <Form.Control
                         type='email'
                         placeholder='email@host.com'
@@ -119,25 +119,25 @@ const Registration = props => {
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Gender</Form.Label>
+                    <Form.Label>Lytis</Form.Label>
                     <div className={classes.radioGroup}>
-                        <Form.Check type='radio' value='0' name='genderGroup' label='Unset' checked={gender === '0'} onChange={e => setGender(e.target.value)}/>
-                        <Form.Check type='radio' value='1' name='genderGroup' label='Male' onChange={e => setGender(e.target.value)}/>
-                        <Form.Check type='radio' value='2' name='genderGroup' label='Female' onChange={e => setGender(e.target.value)}/>
+                        <Form.Check type='radio' value='0' name='genderGroup' label='Nenustatyta' checked={gender === '0'} onChange={e => setGender(e.target.value)}/>
+                        <Form.Check type='radio' value='1' name='genderGroup' label='Vyras' onChange={e => setGender(e.target.value)}/>
+                        <Form.Check type='radio' value='2' name='genderGroup' label='Moteris' onChange={e => setGender(e.target.value)}/>
                     </div>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Username</Form.Label>
+                    <Form.Label>Slapyvardis</Form.Label>
                     <Form.Control
                         type='text'
-                        placeholder='Username'
+                        placeholder='Slapyvardis'
                         onChange={e => setUsername(e.target.value)}
                     />
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label>Slaptažodis</Form.Label>
                     <Form.Control
                         type='password'
                         onChange={e => setPassword(e.target.value)}
@@ -145,7 +145,7 @@ const Registration = props => {
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Repeat password</Form.Label>
+                    <Form.Label>Pakartokite slaptažodį</Form.Label>
                     <Form.Control
                         type='password'
                         onChange={e => setPasswordRepeat(e.target.value)}
@@ -161,7 +161,7 @@ const Registration = props => {
                     className={classes.registerBtn}
                     type='submit'
                 >
-                    Register
+                    Registruotis
                 </Button>
 
             </Form>

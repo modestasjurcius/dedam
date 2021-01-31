@@ -11,16 +11,16 @@ const Login = props => {
     const handleSubmit = e => {
         e.preventDefault();
         if (!username) {
-            setError('Username cannot be empty');
+            setError('Slapyvardžio laukas negali būti tuščias');
             return;
         } else if (!password) {
-            setError('Password cannot be empty');
+            setError('Slaptažodžio laukas negali būti tuščias');
             return;
         }
 
         const user = findUser(username, password);
         if (!user) {
-            setError('User not found');
+            setError('Vartotojas nerastas');
             return;
         }
 
@@ -34,15 +34,15 @@ const Login = props => {
         <div className={classes.container}>
             <Form className={classes.loginForm} onSubmit={handleSubmit}>
                 <Form.Group>
-                    <Form.Label>Username</Form.Label>
+                    <Form.Label>Slapyvardis</Form.Label>
                     <Form.Control
                         type='text'
-                        placeholder='Username'
+                        placeholder='Slapyvardis'
                         onChange={e => setUsername(e.target.value)}
                     />
                 </Form.Group>
                 <Form.Group>
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label>Slaptažodis</Form.Label>
                     <Form.Control
                         type='password'
                         onChange={e => setPassword(e.target.value)}

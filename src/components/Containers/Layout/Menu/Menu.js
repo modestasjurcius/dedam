@@ -36,18 +36,16 @@ const Menu = props => {
             <Navbar.Toggle />
             <Navbar.Collapse>
                 <Nav className="mr-auto">
-                    <Nav.Link>Info</Nav.Link>
-                    <Nav.Link>More info</Nav.Link>
                 </Nav>
                 <Nav className="">
                     {!props.user &&
                         <>
                             <Nav.Link onClick={() => { changePage('login') }}>
-                                Login
+                                Prisijungimas
                                 <i class="fa fa-sign-in pl-2 pr-2"></i>
                             </Nav.Link>
                             <Nav.Link onClick={() => { changePage('register') }}>
-                                Register
+                                Registracija
                                 <i class="fa fa-user-plus pl-2"></i>
                             </Nav.Link>
                         </>
@@ -55,15 +53,15 @@ const Menu = props => {
                     {props.user &&
                         <>
                         <Nav.Link onClick={() => { changePage('profile') }}>
-                                Profile
+                                Profilis
                                 <i class="fa fa-id-badge pl-2 pr-2"></i>
                             </Nav.Link>
                             <Nav.Link onClick={() => { changePage('cart') }}>
-                                Shopping cart
+                                Krepšelis
                                 <i class="fa fa-shopping-cart pl-2 pr-2"></i>
                             </Nav.Link>
                             <Nav.Link onClick={logout}>
-                                Logout
+                                Atsijungti
                                 <i class="fa fa-sign-out pl-2"></i>
                             </Nav.Link>
                         </>

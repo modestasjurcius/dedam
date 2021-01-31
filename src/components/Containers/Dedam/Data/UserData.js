@@ -58,3 +58,7 @@ export function changeUser(currUser, changes){
         ...changes,
     }
 }
+
+export function getUserById(id) {
+    return users.find(u => u.id === id);
+}

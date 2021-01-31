@@ -62,6 +62,7 @@ const Dedam = props => {
                 return (
                     <Profile
                         user={props.user}
+                        onChangePage={props.onChangePage}
                     />
                 );
             default:
