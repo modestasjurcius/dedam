@@ -4,6 +4,7 @@ import Registration from './Registration/Registration';
 import Main from './Main/Main';
 import ItemReview from './Main/ItemReview/ItemReview';
 import Cart from './Main/Cart/Cart';
+import Profile from './Profile/Profile';
 
 const Dedam = props => {
     const [itemIdToView, setItemIdToView] = useState(null);
@@ -55,6 +56,12 @@ const Dedam = props => {
                         products={cartProducts}
                         onChangePage={props.onChangePage}
                         cleanCart={cleanCart}
+                    />
+                );
+            case 'profile':
+                return (
+                    <Profile
+                        user={props.user}
                     />
                 );
             default:

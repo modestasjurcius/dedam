@@ -44,4 +44,17 @@ export function addUser(userData) {
     users.push(userData);
 }
 
+export function changeUser(currUser, changes){
+    let user = users.find(u => u.id === currUser.id);
+    if (!user)
+        return;
 
+    let index = users.indexOf(user);
+    if (index === -1)
+        return;
+
+    users[index] = {
+        ...user,
+        ...changes,
+    }
+}
