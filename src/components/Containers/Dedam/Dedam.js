@@ -3,6 +3,7 @@ import Login from './Login/Login';
 import Registration from './Registration/Registration';
 import Main from './Main/Main';
 import ItemReview from './Main/ItemReview/ItemReview';
+import Profile from './Profile/Profile';
 
 const Dedam = props => {
     const [itemIdToView, setItemIdToView] = useState(null);
@@ -31,6 +32,12 @@ const Dedam = props => {
                 return (
                     <ItemReview
                         productId={itemIdToView}
+                    />
+                );
+            case 'profile':
+                return (
+                    <Profile
+                        user={props.user}
                     />
                 );
             default:
