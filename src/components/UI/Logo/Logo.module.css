@@ -1,0 +1,10 @@
+.img {
+    background-color: black;
+    width: 600px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.container {
+    padding: 20px 0 20px 0;
+}

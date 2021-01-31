@@ -1,0 +1,24 @@
+.container {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: auto;
+    width: 600px;
+    margin-top: 5em;
+}
+
+.loginForm {
+    text-align: unset!important;
+    margin: 5em 10em;
+}
+
+.loginBtn {
+    width: 100%;
+    background-color: black !important;
+}
+
+.error {
+    color: red;
+    padding-bottom: 1em;
+    font-size: 14;
+    font-weight: 700;
+}

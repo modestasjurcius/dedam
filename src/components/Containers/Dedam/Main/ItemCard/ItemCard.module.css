@@ -1,0 +1,12 @@
+.img {
+    object-fit: contain;
+    background-color: whitesmoke;
+    padding: 5%;
+}
+
+.card {
+    width: 25%;
+    max-width: 25%;
+    margin: 25px 25px;
+    border-color: #343a40;
+}

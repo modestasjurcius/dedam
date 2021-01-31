@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Layout from './components/Containers/Layout/Layout';
+import Dedam from './components/Containers/Dedam/Dedam';
+import Notification from 'react-notify-bootstrap';
 
 function App() {
+  const [user, setUser] = useState(null);
+  const [page, setPage] = useState('main');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout
+      onChangePage={page => setPage(page)}
+      onChangeUser={user => setUser(user)}
+      user={user}
+    >
+      <Dedam
+        onChangePage={page => setPage(page)}
+        onChangeUser={user => setUser(user)}
+        page={page}
+        user={user}
+      />
+
+      <Notification options={{ animation: true }} />
+    </Layout>
   );
 }
 

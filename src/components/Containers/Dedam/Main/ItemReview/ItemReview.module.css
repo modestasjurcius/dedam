@@ -1,0 +1,64 @@
+.container {
+    margin: 50px 10%;
+}
+
+.img {
+    background-color: whitesmoke;
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+}
+
+.columnsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 3% 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.column div {
+    font-size: 20px;
+    margin: 2% 0;
+}
+
+.btnBlue {
+    background-color: #3C5095;
+}
+
+.btnRed {
+    background-color: #BE0524;
+}
+
+.btnYellow {
+    background-color: #FDE841;
+}
+
+.btnLightBlue {
+    background-color: #7BB9C8;
+}
+
+.btnGray {
+    background-color: #9C9B96;
+}
+
+.btnWhite {
+    background-attachment: #FFFFFF;
+}
+
+.btnOrange {
+    background-color: #CF671E;
+}
+
+.column button {
+    height: 30px;
+    width: 50px;
+    margin: 0 3%;
+    border-radius: 5px;
+}
