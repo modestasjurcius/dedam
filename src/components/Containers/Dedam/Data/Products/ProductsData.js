@@ -26,7 +26,8 @@ let products = [
         text: '35.00 €',
         price: 35,
         type: 'tshirt',
-        img: t1
+        img: t1,
+        pairProduct: true
     },
     {
         id: 1,
@@ -34,7 +35,8 @@ let products = [
         text: '40.00 €',
         price: 40,
         type: 'tshirt',
-        img: t2
+        img: t2,
+        pairProduct: true
     },
     {
         id: 2,
@@ -42,7 +44,8 @@ let products = [
         text: '35.00 €',
         price: 35,
         type: 'tshirt',
-        img: t3
+        img: t3,
+        pairProduct: true
     },
     {
         id: 3,
@@ -50,7 +53,8 @@ let products = [
         text: '42.00 €',
         price: 42,
         type: 'tshirt',
-        img: t4
+        img: t4,
+        pairProduct: true
     },
     {
         id: 4,
@@ -90,7 +94,8 @@ let products = [
         text: '25.00 €',
         price: 25,
         type: 'apron',
-        img: p1
+        img: p1,
+        pairProduct: true
     },
     {
         id: 9,
@@ -98,7 +103,8 @@ let products = [
         text: '25.00 €',
         price: 25,
         type: 'apron',
-        img: p2
+        img: p2,
+        pairProduct: true
     },
     {
         id: 10,
@@ -154,7 +160,8 @@ let products = [
         text: '45.00 €',
         price: 45,
         type: 'hoodie',
-        img: d1
+        img: d1,
+        pairProduct: true
     },
     {
         id: 17,
@@ -162,7 +169,8 @@ let products = [
         text: '35.00 €',
         price: 35,
         type: 'hoodie',
-        img: d2
+        img: d2,
+        pairProduct: true
     },
     {
         id: 18,
@@ -170,7 +178,8 @@ let products = [
         text: '35.00 €',
         price: 35,
         type: 'hoodie',
-        img: d3
+        img: d3,
+        pairProduct: true
     },
     {
         id: 19,
@@ -178,7 +187,8 @@ let products = [
         text: '50.00 €',
         price: 50,
         type: 'hoodie',
-        img: d4
+        img: d4,
+        pairProduct: true
     },
 ];
 

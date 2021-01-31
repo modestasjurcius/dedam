@@ -11,7 +11,9 @@
     "font-awesome": "^4.7.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
+    "react-bootstrap-select": "^0.14.0",
     "react-dom": "^17.0.1",
+    "react-grid": "^4.0.4",
     "react-notify-bootstrap": "^1.0.23",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"

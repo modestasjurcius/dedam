@@ -12,7 +12,7 @@
 .columnsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
     margin: 3% 0;
 }
@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 400px;
 }
 
 .column div {
@@ -30,35 +31,56 @@
 
 .btnBlue {
     background-color: #3C5095;
+    color: white;
 }
 
 .btnRed {
     background-color: #BE0524;
+    color: white;
 }
 
 .btnYellow {
     background-color: #FDE841;
+    color: white;
 }
 
 .btnLightBlue {
     background-color: #7BB9C8;
+    color: white;
 }
 
 .btnGray {
     background-color: #9C9B96;
+    color: white;
 }
 
 .btnWhite {
     background-attachment: #FFFFFF;
+    color: black;
 }
 
 .btnOrange {
     background-color: #CF671E;
+    color: white;
 }
 
-.column button {
-    height: 30px;
-    width: 50px;
-    margin: 0 3%;
-    border-radius: 5px;
+.sizeRow {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.sizeRow i {
+    height: 40px;
+    width: 40px;
+}
+
+.sizeRow select {
+    width: 100%;
+}
+
+.addBtn {
+    background-color: black;
+    width: 100%;
+    margin-top: 5%
 }

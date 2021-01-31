@@ -1,0 +1,23 @@
+.headRow {
+    border-top: 1px solid #343a40;
+    border-bottom: 1px solid #343a40;
+    padding: 5px 0;
+}
+
+.row {
+    border-bottom: 1px solid #343a40;
+    padding: 5px 0;
+}
+
+.buyBtn {
+    background-color: black;
+    margin-right: 3em;
+}
+
+.continueBtn {
+    background-color: #343a40;
+}
+
+.btnContainer {
+    margin-top: 5em;
+}

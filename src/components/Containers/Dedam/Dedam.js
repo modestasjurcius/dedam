@@ -3,9 +3,23 @@ import Login from './Login/Login';
 import Registration from './Registration/Registration';
 import Main from './Main/Main';
 import ItemReview from './Main/ItemReview/ItemReview';
+import Cart from './Main/Cart/Cart';
 
 const Dedam = props => {
     const [itemIdToView, setItemIdToView] = useState(null);
+    const [cartProducts, setCardProducts] = useState([]);
+
+    const addToCart = product => {
+        let products = cartProducts;
+        products.push(product);
+        setCardProducts(products);
+    }
+
+    const cleanCart = () => {
+        setCardProducts([]);
+    };
+
+
 
     const getPage = page => {
         switch (page) {
@@ -31,6 +45,16 @@ const Dedam = props => {
                 return (
                     <ItemReview
                         productId={itemIdToView}
+                        addToCart={addToCart}
+                        onChangePage={props.onChangePage}
+                    />
+                );
+            case 'cart':
+                return (
+                    <Cart
+                        products={cartProducts}
+                        onChangePage={props.onChangePage}
+                        cleanCart={cleanCart}
                     />
                 );
             default:

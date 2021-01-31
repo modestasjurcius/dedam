@@ -25,7 +25,7 @@ const Menu = props => {
             expand='lg'
             sticky='top'
         >
-            <Navbar.Brand>
+            <Navbar.Brand onClick={() => {changePage('main')}}>
                 <img
                     src={logo}
                     width='100'
